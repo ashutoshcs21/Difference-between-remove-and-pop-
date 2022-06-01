@@ -1,0 +1,21 @@
+remove
+
+num1=[1,2,3,4,5,3]
+#Removing element '3' from the list.It will remove only first occurences of that element.
+num1.remove(3)
+print (num1)#Output:[1, 2, 4, 5, 3]
+#If we didn't mention any element,it will raise TypeError.
+num1.remove()
+#Output:TypeError: remove() takes exactly one argument (0 given)
+#If the mentioned element is not in the list,it will raise ValueError.
+num1.remove(10)
+#Output:ValueError: list.remove(x): x not in list
+pop
+
+num1=[1,2,3,4,5]
+#removes and returns the last element from the list.
+print (num1.pop())#Output:5
+print (num1)#Output:[1, 2, 3, 4]
+#If index is mentioned,removes and returns the element at the specfied index.
+print (num1.pop(3))#Output:4
+print (num1)#Output:[1, 2, 3]
